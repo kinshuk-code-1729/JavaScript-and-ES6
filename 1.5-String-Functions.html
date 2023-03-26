@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions</title>
+</head>
+<body>
+    <h3>String Functions</h3>
+    <script>
+        var l = "Saurabh is the Head of the Department";
+        console.log(l.length);
+
+        console.log(l.indexOf("part"));
+        console.log(l.lastIndexOf("the"));
+    
+        console.log(l.slice(3,8));
+        console.log(l.substring(3,8));
+        console.log(l.substr(3,8));  // 2nd parameter is length
+
+        console.log(l.toUpperCase());
+        console.log(l.toLowerCase());
+
+        var data = "   Today is a good day to        outside    ";
+            console.log(data);
+            console.log(data.trim());//removes leading and trailing spaces
+    
+            console.log(l);
+            var res = l.replace("Saurabh", "Sumit");//does not change the original string
+            console.log(res);
+            console.log(l);
+    
+            /*console.log(line.charAt(3));//3rd index
+            console.log(line[5]);
+            console.log(line.charCodeAt(3));//3rd index item's UTF code */    
+    </script>
+</body>
+</html>
