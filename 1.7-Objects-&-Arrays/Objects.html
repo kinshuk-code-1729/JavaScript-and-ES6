@@ -9,38 +9,38 @@
 <body>
     <h1>Objects in JS</h1>
     <script>
-        let var1 = 22;
-        console.log("Type of var1 is " + typeof (var1));
-        let var2 = "John";
-        console.log("Type of var2 is " + typeof (var2));
-        let var3 = 40.67;
-        console.log("Type of var3 is " + typeof (var3));
-        let var4 = false;
-        console.log("Type of var4 is " + typeof (var4));
-        let var5; //default of js variable is undefined...if(var5) => false
-        console.log("Type of var5 is " + typeof (var5));
-        let var6 = undefined;
-        console.log("Type of var6 is " + typeof (var6));
-        let var7 = null;
-        console.log("Type of var7 is " + typeof (var7));
+        let v1 = 15;
+        console.log("Type of v1 : " + typeof (v1));
+        let v2 = "Jaideep";
+        console.log("Type of v2 : " + typeof (v2));
+        let v3 = 25.63;
+        console.log("Type of v3 : " + typeof (v3));
+        let v4 = true;
+        console.log("Type of v4 : " + typeof (v4));
+        let v5; //default of js variable is undefined...if(v5) => false
+        console.log("Type of v5 : " + typeof (v5));
+        let v6 = undefined;
+        console.log("Type of v6 : " + typeof (v6));
+        let v7 = null;
+        console.log("Type of v7 : " + typeof (v7));
 
         //Create my own Data type and its Object
         let student = {
-            name: "Peter",
-            rollNo: 567,
-            age: 23,
-            "dept name": "Phy"
+            name: "Prashant",
+            rollNo: 119,
+            age: 21,
+            "dept name": "CSE"
         };
 
         console.log(student);
         console.log(typeof (student));
 
-        console.log(student.name);
-        console.log(student['name']);
+        console.log(student.name);  // 1st way
+        console.log(student['name']); // 2nd way
 
         console.log(student['dept name']);
 
-        //Object destructing
+        //Object destructuring
         const { rollNo, age } = student;
         console.log(rollNo);
         console.log(age);
