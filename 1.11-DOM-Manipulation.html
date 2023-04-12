@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation in JS</title>
+</head>
+<body>
+    <div id="header" class="layout">
+        <h2>Header Section</h2>
+    </div>
+    <div id="main" class="layout">
+        <section id="left">
+            <ul class="left-menu">
+                <li>Home</li>
+                <li>Login</li>
+                <li>Register</li>
+            </ul>
+        </section>
+        <section id="center">
+            <h3>Hello from DOM</h3>
+            <input id="fullName" type="text" placeholder="Full Name" value="Kinshuk Banerjee">
+        </section>
+        <section id="right">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, eos!</p>
+        </section>
+    </div>
+    <div id="footer" class="layout">
+        @All Rights Reserved
+    </div>
+    <script>
+        let mainElement = document.getElementById('main');
+        console.log(mainElement);
+        
+        let fullName = document.getElementById('fullName');
+        console.log(fullName.value);
+        
+        let rightElement = document.getElementById('right');
+        console.log(rightElement);
+        console.log(rightElement.innerHTML);
+
+        let LayoutElements = document.getElementsByClassName('layout');
+        console.log(LayoutElements);
+        console.log(LayoutElements[2]);
+
+        let TagElements = document.getElementsByTagName('li');
+        console.log(TagElements);
+        console.log(TagElements[2]);
+        console.log(TagElements[2].innerHTML);
+        TagElements[2].innerHTML = 'Sign Up';
+
+        // let selQuery = document.querySelector('section');
+        // console.log(selQuery);
+
+        // let selQuery = document.querySelector('.layout');
+        // console.log(selQuery);
+
+        // let selQuery = document.querySelector('#left');
+        // console.log(selQuery);
+
+        //let selQuery = document.querySelector('#left > ul');//returns the 1st matching instance
+        //console.log(selQuery);
+
+        //let selQuery = document.querySelector('#left > ul > li');//returns the 1st matching instance
+        //console.log(selQuery);
+
+        //let selQuery = document.querySelector('#left > .left-menu > li');//returns the 1st matching instance
+        //console.log(selQuery);
+
+        let selQuery = document.querySelectorAll('#left > .left-menu > li');//returns all the matching instance
+        console.log(selQuery);
+        selQuery[1].style.color = 'red';//makes the font color to red
+    </script>
+</body>
+</html>
