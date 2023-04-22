@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Timeout Function in JavaScript</title>
+</head>
+<body id="bodyTag">
+    <h2>Set Timeout Function in JavaScript</h2>
+    <script>
+        function show(eName,eDept){
+            console.log("Employee Name : "+eName+"\nEmployee Department : "+eDept);
+        }
+        // show("Rakesh","Sales");
+        // show("Manish","Accounting");
+        // setTimeout(show,5000);
+        // setTimeout(show,"Rohit","Maths"); // executes only once
+        setInterval(function(){
+            document.querySelector('#bodyTag').style.backgroundColor = 'lime';
+        },4000);
+        let toutId = setTimeout(show,10000,"Muskan","Python");
+        console.log(`Time Out id is : ${toutId}`);
+        clearTimeout(toutId);
+    </script>
+</body>
+</html>

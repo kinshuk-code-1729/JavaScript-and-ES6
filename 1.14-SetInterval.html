@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval in JS</title>
+</head>
+<body id="bodyTag">
+    <h2>Set Interval Function in JavaScript</h2>
+    <div id="textArea">Time in seconds : <span id="seconds"></span></div>
+    <script>
+        function show(eName,eDept){
+            console.log("Employee Name : "+eName+"\nEmployee Department : "+eDept);
+        }
+        // show("Rakesh","Sales");
+        // show("Manish","Accounting");
+        // setInterval(show,2000);
+        // setInterval(show,4000,"Rohit","Maths"); // executes only once
+        let count = 0;
+        setInterval(function(){
+            count++;
+            document.querySelector('#seconds').innerHTML = count;
+            let color = `#${count}15${count}15`;
+            document.querySelector('#textArea').style.backgroundColor = color;
+        },1000);
+        let intId = setInterval(show,5000,"Muskan","Python");
+        console.log(`Interval id is : ${intId}`);
+        // clearInterval(intId);
+    </script>
+</body>
+</html>
