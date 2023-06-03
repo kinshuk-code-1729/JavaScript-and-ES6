@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function in ECMA Script 6 (ES6)</title>
+</head>
+<body>
+    <h2>Arrow function</h2>
+    <p><b>Arrow Function</b> is a <i>shortcut</i> way of writing normal <b>JavaScript</b> function in ES6.</p>
+    <script>
+        function sum(x,y){
+            return x + y;
+        }
+        let z = sum(54,46);
+        console.log(z);
+
+        const add =  function (p,q){
+            return p + q;
+        };
+        z = add(14,36);
+        console.log(z);
+
+        /* const addition =  (a,b)=>{
+            return a + b;
+        }; */
+
+        const addition =  (a,b)=> a + b; // same as above
+
+        z = addition(11,14);
+        console.log(z);
+
+        // const square = (n) => n*n;
+        const square = n => n*n; // suitable only for 1 parameter function
+        console.log(square(9));
+
+        const printMsg = ()=> console.log("Hello from the arrow function !!!!!");
+        printMsg();
+
+        // setInterval(()=>{console.log("After 3 seconds ...")},3000)
+        setInterval(()=>console.log("After 3 seconds ..."),3000)
+        // setInterval(function(){console.log("After 3 seconds ...")},3000)
+        // setInterval(function test(){console.log("After 3 seconds ...")},3000)
+    </script>
+</body>
+</html>

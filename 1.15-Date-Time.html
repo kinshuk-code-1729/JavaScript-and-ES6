@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time in JS</title>
+</head>
+<body>
+    <h2>Date and Time in JS</h2>
+    <div id="dateTime"></div>
+    <div id="dateTimeFormatted"></div>
+    <script>
+
+        setInterval(function test(){
+            let curDT = new Date();
+            // console.log(curDT);
+            document.querySelector('#dateTime').innerHTML = curDT;
+        },1000);
+        let defdate = new Date(0);
+        console.log(defdate);
+        
+        defdate = new Date(6000); // Time Elapsed in ms from Thu Jan 01 1970 05:30:00
+        console.log(defdate); // Thu Jan 01 1970 05:30:06
+
+        // let date2 =  new Date(year, month, day, hour, minutes, seconds, milliseconds);
+        let date2 = new Date(2002,1,12,0,33,21,11); // month ranges from 0-11
+        console.log(date2); // Tue Feb 12 2002 00:33:21
+
+        let start = Date.now();
+   
+        console.log(date2.getFullYear());
+        console.log(date2.getMonth()); // 0-11
+        console.log(date2.getDate()); // actual date
+        console.log(date2.getDay()); // day of week
+        console.log(date2.getHours());
+        console.log(date2.getMinutes());
+        console.log(date2.getSeconds());
+        console.log(date2.getMilliseconds());
+
+        let dateFormat = `Date is : ${date2.getDate()}-0${date2.getMonth()+1}-${date2.getFullYear()}`;
+        document.querySelector('#dateTimeFormatted').innerHTML = dateFormat;
+
+        // UTC : Coorcinated Universal Time : LONDON
+        let UTCtime = new Date();
+        console.log(UTCtime.getHours()); // My Local Time now
+        console.log(UTCtime.getUTCHours()); // London Time
+
+        console.log(UTCtime);
+        UTCtime.setDate(6); // add 6 to Day Part of Date
+        console.log(UTCtime);
+        UTCtime.setDate(40);
+        console.log(UTCtime);
+
+        let end = Date.now();
+        console.log("Time taken to execute the code : "+(end - start)+" ms");
+
+        let TimeElapsedinMillsecs = Date.now();
+        console.log(TimeElapsedinMillsecs);
+    </script>
+</body>
+</html>
