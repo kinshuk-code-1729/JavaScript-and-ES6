@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math object in JS</title>
+</head>
+<body>
+    <h2>Math object in JS</h2>
+    <script>
+        let mathObj = Math;
+        console.log(mathObj);
+        console.log("Value of π = "+Math.PI);
+
+        console.log("Rounding off 99.7896451 : "+Math.round(99.7896451));
+        console.log("Rounding off 78.25879 : "+Math.round(78.25879));
+        console.log("9 raised to power 3 : "+Math.pow(9,3));
+        console.log("Square Root of 576 : "+Math.sqrt(576));
+
+        console.log("Celing Value of 45.3678 : "+Math.ceil(45.3678));        
+        console.log("Floor Value of 45.3678 : "+Math.floor(45.3678));        
+
+        console.log(Math.abs(-112));
+
+        console.log("sin(π/2) = "+Math.sin(Math.PI/2));
+        console.log("cos(π/2) = "+Math.cos(Math.PI/2));
+        console.log("tan(π/2) = "+Math.tan(Math.PI/2));
+
+        console.log("Maximum value :"+Math.max(78,14,56,98,87,31));
+        console.log("Minimum value :"+Math.min(78,14,56,98,87,31));
+
+        let randnum = Math.random(); // generates a random number b/w 0 & 1.
+        console.log(randnum);
+
+        function randomInterval(min,max){   // min and max included
+            return Math.floor(Math.random() * (max - min + 1) + min)
+        }
+
+        const randInt = randomInterval(100,200);
+        console.log(randInt);
+    </script>
+</body>
+</html>
