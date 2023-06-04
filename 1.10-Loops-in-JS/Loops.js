@@ -56,3 +56,26 @@ do {
     console.log(i);
     i++;
 } while (i < 5);
+
+let empArr = [
+    {
+        id : 81,
+        Name : "Kinshuk",
+        Age : 21
+    },
+    {
+        id : 69,
+        Name : "Jagjeet",
+        Age : 22
+    },
+    {
+        id : 132,
+        Name : "Rishi",
+        Age : 20
+    }
+];
+
+empArr.forEach((emp,index,empArr)=>{
+    // console.log(empArr);
+    console.log(`${index} - ${JSON.stringify(emp)}`);
+});
