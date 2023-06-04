@@ -27,6 +27,30 @@
         let nonEligibleArr = ageArray.filter(checkNonEligibility);
         console.log("Not Eligible for voting");
         console.log(nonEligibleArr);
+
+        let empArr = [
+            {
+                id : 81,
+                Name : "Kinshuk",
+                Age : 21
+            },
+            {
+                id : 69,
+                Name : "Jagjeet",
+                Age : 22
+            },
+            {
+                id : 132,
+                Name : "Rishi",
+                Age : 21
+            }
+        ];
+
+        let fixAge = empArr.filter((stu) =>{
+            return stu.Age > 21;
+        });
+
+        console.log(fixAge);
     </script>
 </body>
 
