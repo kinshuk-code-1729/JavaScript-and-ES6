@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optional Chaining in JS</title>
+</head>
+<body>
+    <h1>Optional Chaining</h1>
+    <script>
+        let emp ={
+            Contact : {
+                Phone : 8989987456,
+                email : "emp789@yahoo.com"
+            },
+            Address :{
+                Street : "Old Rajinder Nagar",
+                City : "Lucknow",
+                Pincode : 963771
+            }
+        }
+        console.log(emp.Contact.Phone); // non existence of 'contact' object will cause the program tp stop.
+        console.log(emp?.Contact?.Phone); // program continues in absence of 'contact' object too.
+    </script>
+</body>
+</html>
