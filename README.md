@@ -24,3 +24,16 @@ _It is mainly used for :_
 - Displaying date and time.
 - Displaying pop-up windows and dialog boxes (like an alert dialog box, confirm dialog box and prompt dialog box),
 - Displaying clocks etc.
+
+## ES6 or ECMAScript 6 :
+**ES6** stands for **ECMAScript 6**, which is a scripting language specification that was standardized by **ECMAScript International** in 2015. It is also known as **ECMAScript 2015**. ES6 is used by applications to enable _client-side scripting_, such as **JavaScript**, **ActionScript**, and **JScript3**. ES6 introduced many new features and syntax improvements to the language, such as :
+- **_let_** and **_const_** keywords for declaring variables with block scope.
+- **Arrow functions** for writing concise function expressions.
+- **Default** parameter values for functions.
+- The **spread operator (...)** for expanding iterables into more elements or arguments.
+- The **for/of** loop for iterating over the values of an iterable object.
+- **Map** and **Set** objects for storing collections of **key-value** pairs and **unique** values.
+- **Classes** for defining **_object-oriented_** structures with **inheritance** and methods.
+- **Promises** for handling **_asynchronous_ operations**.
+- **Symbols** for creating **unique** identifiers for object properties.
+- **Modules** for organizing code into separate files and **namespaces**.
