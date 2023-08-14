@@ -6,11 +6,11 @@ This repository coantains the different concepts of JavaScript and ECMA Script 6
 - JavaScript's dynamic capabilities include runtime object construction, variable parameter lists, function variables, dynamic script creation (via _**eval**_ ), object introspection (via **_for...in_** and **_Object_ utilities**), and source-code recovery (JavaScript functions store their source text and can be retrieved through **_toString_**( )).
 
 ### Features of JavaScript :
-All popular web browsers support JavaScript as they provide built-in execution environments.
-JavaScript follows the syntax and structure of the C programming language. Thus, it is a structured programming language.
-JavaScript is a weakly typed language, where certain types are implicitly cast (depending on the operation).
-JavaScript is an object-oriented programming language that uses prototypes rather than using classes for inheritance.
-It is a light-weighted and interpreted language.
-It is a case-sensitive language.
-JavaScript is supportable in several operating systems including, Windows, macOS, etc.
-It provides good control to the users over the web browsers.
+- All popular web browsers support **JavaScript** as they provide _built-in execution_ environments.
+- **JavaScript** follows the syntax and structure of the **C programming language**. Thus, it is a **structured** programming language.
+- **JavaScript** is a _weakly typed_ language, where certain types are _implicitly cast_ (depending on the operation).
+- **JavaScript** is an **_object-oriented_** programming language that uses prototypes rather than using classes for inheritance.
+- It is a **light-weighted** and interpreted language.
+- It is a **case-sensitive** language.
+- **JavaScript** is supportable in several operating systems including _Windows, macOS,_ etc.
+- It provides good control to the users over the web browsers.
