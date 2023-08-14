@@ -22,7 +22,7 @@ _It is mainly used for :_
 - Client-side validation.
 - Dynamic drop-down menus.
 - Displaying date and time.
-- Displaying pop-up windows and dialog boxes (like an alert dialog box, confirm dialog box and prompt dialog box),
+- Displaying pop-up windows and dialog boxes (like an alert dialog box, confirm dialog box and prompt dialog box).
 - Displaying clocks etc.
 
 ## ES6 or ECMAScript 6 :
