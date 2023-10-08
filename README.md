@@ -1,4 +1,4 @@
-# JavaScript-and-ES6
+# 🎇 JavaScript-and-ES6 🎇
 This repository coantains the different concepts of JavaScript and ECMA Script 6 which I've learnt while learning JS.
 
 ## JavaScript :
